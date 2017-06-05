@@ -1,0 +1,88 @@
+header {
+	margin: 20px 20px 0px;
+	width:145px;
+	height:30px;
+	background: url('../images/website-sprite.png') -200px -20px no-repeat;
+}
+
+.header-hr {
+	margin-top:10px;
+	margin-bottom:0px;
+}
+
+#editForm {
+	width:80%;
+	display:none;
+	float:left;
+	margin-bottom:16px;
+}
+
+#editForm-attributes {
+	margin-bottom:45px;
+}
+
+.attribute-row{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#addAttributeButton {
+	margin-top: 10px;
+}
+
+#viewTag {
+	width:80%;
+	display:none;
+	float:left;
+	margin-bottom:16px;
+}
+
+#viewTag-display {
+	padding-top:50px;
+	padding-left:20px;
+}
+
+#left-col-bar {
+	width:20%;
+	float:left;
+}
+
+.tags-list-container {
+	height:1000px;
+	overflow-y: scroll;
+	margin-bottom: 50px;
+}
+
+.create-container {
+	margin-bottom:10px;
+}
+
+.create-container h2 {
+	font-size:1.2em;
+}
+
+#actions-list {
+	margin-top:8px;
+	float:right;
+}
+
+#tagName {
+	width:180px;
+}
+
+#tagDemo {
+	height:500px;
+}
+
+.incomplete a{
+	color: #FF0000;
+}
+
+#tag-creation-form{
+	padding-top:50px;
+	padding-left:20px;
+}
+
+#tag-creation-form button{
+	float:right;
+}

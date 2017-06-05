@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML Reference | Getting Started</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="public/css/site.css" rel="stylesheet">
+    <link href="public/css/reference-bootstrap.css" rel="stylesheet">
+
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="opacity:0.92">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">HTML Reference</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="gettingstarted.html">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="tutorials.html">Tutorials</a>
+                    </li>
+                    <li>
+                        <a href="#">Reference</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- page content -->
+    <hr>   
+    <div class="container">
+        <div class="jumbotron text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="elementTitle">Element: &lt;!--...--&gt;</h1>
+                </div>
+                <div class="col-md-12">
+                    <noscript>Enable javascript in order to properly view this page.</noscript>
+                    <h2>Definition:</h2>
+                    <h4 id="elementDefinition">Used to construct comments not displayed by the browser.</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center">Syntax:</h2>
+                    <p>
+                        <pre id="elementSyntax">
+&lt;!-- comments here --&gt;
+                        </pre>
+                    </p>
+                </div>
+                <div class="col-md-6">
+
+                    <h2 class="text-center">Example:</h2>
+                    <p id="bodyContent">
+                        <pre id="elementExample">
+&lt;!--
+The comment tag is usually used by website developers to write notes, documentation, and to-dos within their code.
+-->
+&lt;!--
+The comment tag can be used for creating if statements in some browsers. E.g
+-->
+&lt;!--[if gte Chrome 42]>
+&lt;p>Awesome you are using the Chrome version greater than 41.&lt;/p>
+&lt;![endif]-->
+&lt;!--
+That's it for the comment tag
+!-->
+                        </pre>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="container search-container">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <form class="navbar-form" role="search">
+                    <div class="form-group">
+                        <input id="searchFormField" type="text" class="form-control input-lg" placeholder="Search for tags">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" id="searchBtnRef" 
+                            style="margin-left:10px; padding-left:25px; padding-right:25px">
+                    Go &raquo;</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <a href="tutorials.html" class="navbar-btn btn-primary btn btn-lg" id="goToTutorialBtn">Go to tutorial for &lt;!-- --> </a>                
+            </div>
+        </div>
+        <hr>
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" class="active"><a href="#" onclick="refObj.refTagClicked(this)">&lt;!--...--&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;!DOCTYPE&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;a&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;abbr&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;address&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;area&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;article&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;aside&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;audio&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;b&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;base&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;bdi&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;bdo&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;blockquote&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;body&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;br&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;button&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;canvas&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;caption&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;cite&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;code&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;col&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;colgroup&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;datalist&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;dd&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;del&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;details&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;dfn&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;dialogue&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;div&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;dl&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;dt&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;em&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;embed&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;fieldset&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;figcaption&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;figure&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;footer&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;form&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;h1&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;h2&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;h3&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;h4&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;h5&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;h6&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;head&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;header&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;hr&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;html&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;i&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;iframe&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;img&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;input&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;ins&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;kbd&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;keygen&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;label&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;legend&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;li&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;link&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;main&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;map&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;mark&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;menu&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;menuitem&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;meta&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;meter&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;nav&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;noscript&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;object&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;ol&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;optgroup&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;option&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;output&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;p&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;param&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;pre&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;progress&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;q&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;rp&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;rt&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;ruby&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;s&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;samp&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;script&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;section&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;select&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;small&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;source&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;span&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;strong&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;style&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;sub&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;summary&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;sup&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;table&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;tbody&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;td&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;textarea&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;tfoot&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;th&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;thead&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;time&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;title&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;tr&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;track&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;u&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;ul&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;var&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;video&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;wbr&gt;</a></li>
+            <li role="presentation"><a href="#" onclick="refObj.refTagClicked(this)">&lt;svg&gt;</a></li>
+        </ul>
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Team 22 - UC San Diego</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+
+
+    
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="public/js/main.js"></script>
+
+</body>
+</html>

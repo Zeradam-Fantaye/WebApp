@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+        <title>HTML Reference</title>
+        <meta charset="UTF-8">
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="public/css/database.css">
+  </head>
+	<body>
+    <header></header>
+    <hr class="header-hr">
+
+        <div class="container">
+            <div class="container" id="left-col-bar">
+                <div class="panel panel-default" style="margin-top:49px">
+                    <div class="panel-heading">List of tags</div>
+                    <div class="panel-body">
+                        <div class="tags-list-container">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-!--...--"><a href="#" onclick="tagClick(this)">&lt;!--...--&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-!DOCTYPE"><a href="#" onclick="tagClick(this)">&lt;!DOCTYPE&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-a"><a href="#" onclick="tagClick(this)">&lt;a&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-abbr"><a href="#" onclick="tagClick(this)">&lt;abbr&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-address"><a href="#" onclick="tagClick(this)">&lt;address&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-area"><a href="#" onclick="tagClick(this)">&lt;area&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-article"><a href="#" onclick="tagClick(this)">&lt;article&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-aside"><a href="#" onclick="tagClick(this)">&lt;aside&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-audio"><a href="#" onclick="tagClick(this)">&lt;audio&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-b"><a href="#" onclick="tagClick(this)">&lt;b&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-base"><a href="#" onclick="tagClick(this)">&lt;base&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-bdi"><a href="#" onclick="tagClick(this)">&lt;bdi&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-bdo"><a href="#" onclick="tagClick(this)">&lt;bdo&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-blockquote"><a href="#" onclick="tagClick(this)">&lt;blockquote&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-body"><a href="#" onclick="tagClick(this)">&lt;body&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-br"><a href="#" onclick="tagClick(this)">&lt;br&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-button"><a href="#" onclick="tagClick(this)">&lt;button&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-canvas"><a href="#" onclick="tagClick(this)">&lt;canvas&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-caption"><a href="#" onclick="tagClick(this)">&lt;caption&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-cite"><a href="#" onclick="tagClick(this)">&lt;cite&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-code"><a href="#" onclick="tagClick(this)">&lt;code&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-col"><a href="#" onclick="tagClick(this)">&lt;col&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-colgroup"><a href="#" onclick="tagClick(this)">&lt;colgroup&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-datalist"><a href="#" onclick="tagClick(this)">&lt;datalist&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-dd"><a href="#" onclick="tagClick(this)">&lt;dd&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-del"><a href="#" onclick="tagClick(this)">&lt;del&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-details"><a href="#" onclick="tagClick(this)">&lt;details&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-dfn"><a href="#" onclick="tagClick(this)">&lt;dfn&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-dialog"><a href="#" onclick="tagClick(this)">&lt;dialog&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-div"><a href="#" onclick="tagClick(this)">&lt;div&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-dl"><a href="#" onclick="tagClick(this)">&lt;dl&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-dt"><a href="#" onclick="tagClick(this)">&lt;dt&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-em"><a href="#" onclick="tagClick(this)">&lt;em&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-embed"><a href="#" onclick="tagClick(this)">&lt;embed&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-fieldset"><a href="#" onclick="tagClick(this)">&lt;fieldset&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-figcaption"><a href="#" onclick="tagClick(this)">&lt;figcaption&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-figure"><a href="#" onclick="tagClick(this)">&lt;figure&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-footer"><a href="#" onclick="tagClick(this)">&lt;footer&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-form"><a href="#" onclick="tagClick(this)">&lt;form&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-h1"><a href="#" onclick="tagClick(this)">&lt;h1&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-h2"><a href="#" onclick="tagClick(this)">&lt;h2&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-h3"><a href="#" onclick="tagClick(this)">&lt;h3&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-h4"><a href="#" onclick="tagClick(this)">&lt;h4&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-h5"><a href="#" onclick="tagClick(this)">&lt;h5&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-h6"><a href="#" onclick="tagClick(this)">&lt;h6&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-head"><a href="#" onclick="tagClick(this)">&lt;head&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-header"><a href="#" onclick="tagClick(this)">&lt;header&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-hr"><a href="#" onclick="tagClick(this)">&lt;hr&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-html"><a href="#" onclick="tagClick(this)">&lt;html&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-i"><a href="#" onclick="tagClick(this)">&lt;i&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-iframe"><a href="#" onclick="tagClick(this)">&lt;iframe&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-img"><a href="#" onclick="tagClick(this)">&lt;img&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-input"><a href="#" onclick="tagClick(this)">&lt;input&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-ins"><a href="#" onclick="tagClick(this)">&lt;ins&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-kbd"><a href="#" onclick="tagClick(this)">&lt;kbd&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-keygen"><a href="#" onclick="tagClick(this)">&lt;keygen&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-label"><a href="#" onclick="tagClick(this)">&lt;label&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-legend"><a href="#" onclick="tagClick(this)">&lt;legend&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-li"><a href="#" onclick="tagClick(this)">&lt;li&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-link"><a href="#" onclick="tagClick(this)">&lt;link&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-main"><a href="#" onclick="tagClick(this)">&lt;main&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-map"><a href="#" onclick="tagClick(this)">&lt;map&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-mark"><a href="#" onclick="tagClick(this)">&lt;mark&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-menu"><a href="#" onclick="tagClick(this)">&lt;menu&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-menuitem"><a href="#" onclick="tagClick(this)">&lt;menuitem&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-meta"><a href="#" onclick="tagClick(this)">&lt;meta&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-meter"><a href="#" onclick="tagClick(this)">&lt;meter&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-nav"><a href="#" onclick="tagClick(this)">&lt;nav&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-noscript"><a href="#" onclick="tagClick(this)">&lt;noscript&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-object"><a href="#" onclick="tagClick(this)">&lt;object&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-ol"><a href="#" onclick="tagClick(this)">&lt;ol&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-optgroup"><a href="#" onclick="tagClick(this)">&lt;optgroup&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-option"><a href="#" onclick="tagClick(this)">&lt;option&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-output"><a href="#" onclick="tagClick(this)">&lt;output&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-p"><a href="#" onclick="tagClick(this)">&lt;p&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-param"><a href="#" onclick="tagClick(this)">&lt;param&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-pre"><a href="#" onclick="tagClick(this)">&lt;pre&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-progress"><a href="#" onclick="tagClick(this)">&lt;progress&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-q"><a href="#" onclick="tagClick(this)">&lt;q&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-rp"><a href="#" onclick="tagClick(this)">&lt;rp&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-rt"><a href="#" onclick="tagClick(this)">&lt;rt&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-ruby"><a href="#" onclick="tagClick(this)">&lt;ruby&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-s"><a href="#" onclick="tagClick(this)">&lt;s&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-samp"><a href="#" onclick="tagClick(this)">&lt;samp&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-script"><a href="#" onclick="tagClick(this)">&lt;script&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-section"><a href="#" onclick="tagClick(this)">&lt;section&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-select"><a href="#" onclick="tagClick(this)">&lt;select&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-small"><a href="#" onclick="tagClick(this)">&lt;small&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-source"><a href="#" onclick="tagClick(this)">&lt;source&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-span"><a href="#" onclick="tagClick(this)">&lt;span&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-strong"><a href="#" onclick="tagClick(this)">&lt;strong&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-style"><a href="#" onclick="tagClick(this)">&lt;style&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-sub"><a href="#" onclick="tagClick(this)">&lt;sub&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-summary"><a href="#" onclick="tagClick(this)">&lt;summary&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-sup"><a href="#" onclick="tagClick(this)">&lt;sup&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-svg"><a href="#" onclick="tagClick(this)">&lt;svg&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-syntaxtemplate"><a href="#" onclick="tagClick(this)">&lt;syntaxtemplate&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-table"><a href="#" onclick="tagClick(this)">&lt;table&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-tbody"><a href="#" onclick="tagClick(this)">&lt;tbody&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-td"><a href="#" onclick="tagClick(this)">&lt;td&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-textarea"><a href="#" onclick="tagClick(this)">&lt;textarea&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-tfoot"><a href="#" onclick="tagClick(this)">&lt;tfoot&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-th"><a href="#" onclick="tagClick(this)">&lt;th&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-thead"><a href="#" onclick="tagClick(this)">&lt;thead&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-time"><a href="#" onclick="tagClick(this)">&lt;time&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-title"><a href="#" onclick="tagClick(this)">&lt;title&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-tr"><a href="#" onclick="tagClick(this)">&lt;tr&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-track"><a href="#" onclick="tagClick(this)">&lt;track&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-u"><a href="#" onclick="tagClick(this)">&lt;u&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-ul"><a href="#" onclick="tagClick(this)">&lt;ul&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-var"><a href="#" onclick="tagClick(this)">&lt;var&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-video"><a href="#" onclick="tagClick(this)">&lt;video&gt;</a></li>
+                                <li role="presentation" class="left-col-tag-item incomplete" id="tag-wbr"><a href="#" onclick="tagClick(this)">&lt;wbr&gt;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="viewTag">
+                <div id="actions-list">
+                    <button type="button" class="btn btn-default" onclick="editTagClick()">Edit Tag</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete Tag</button>
+                </div>
+                <div id="viewTag-display">
+                </div>
+            </div>
+
+            <div class="container" id="editForm">
+                <form id="tag-creation-form">
+                    <div class="form-group">
+                        <label for="tagName">tag</label>
+                        <input type="text" class="form-control" id="tagName" placeholder="e.g. div, doctype, table ... ">
+                    </div>
+                    <div class="form-group">
+                        <label for="tagDescription">description</label>
+                        <input type="text" class="form-control" id="tagDescription" placeholder="Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="standardSyntax">standard_syntax</label>
+                        <input type="text" class="form-control" id="standardSyntax" placeholder="e.g. ><a href='url'>Link text</a>">
+                    </div>
+
+                    <div class="form-group" id="editForm-attributes">
+                        <label for="standardSyntax">attributes</label>
+                        <div id="attributeList">
+                            <div class="row attribute-row">
+                                <div class="col-xs-2">
+                                    <input type="text" class="form-control col-xs-2" placeholder="attribute name">
+                                </div>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control col-xs-8" placeholder="attribute definition">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="addAttribute()" id="addAttributeButton"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Attribute</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tagDemo">demo</label>
+                        <textarea class="form-control" id="tagDemo" placeholder="Insert demo code"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-large btn-primary" onclick="tagSubmit()">Save</button>
+                </form>
+            </div>
+
+            <div class="modal fade" id="deleteModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Delete confirmation</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to delete this tag's information?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger" onclick="deleteTag()">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="deletedModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Tag Deleted</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>This tag has been deleted</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="updatedModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Tag Updated</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>This tag has been created/updated</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="public/js/database-interface.js"></script>
+	</body>
+</html>
