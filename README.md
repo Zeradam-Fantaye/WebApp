@@ -4,3 +4,5 @@ This a HTML Reference webapp used to help guide HTML5 beginners learn about the 
 
 At the client side, vanilla JS, CSS, and HTML5 are used to build the webapp. Bootstrap is also another stylesheet that is used to help beautify the HTML reference app. 
 
+Firebase is used to manage the server side. 
+
